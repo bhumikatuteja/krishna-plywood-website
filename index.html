@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Interior & Exterior</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <button data-scroll="home">Home</button>
+      <button data-scroll="services">Our Services</button>
+      <button data-scroll="reviews">Reviews</button>
+      <button data-scroll="about">About Us</button>
+      <button data-scroll="contact">Contact</button>
+      
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home-section">
+      <div class="brand-container">
+        <h1 class="brand-name">Krishna Plywood</h1>
+        <p class="tagline">Where aesthetics meet functionality</p>
+      </div>
+      <div class="slideshow-container">
+        <div class="slide active"><img src="images/portfolio1.jpg" alt="Beautiful living room interior design"></div>
+        <div class="slide"><img src="images/portfolio2.jpg" alt="Modern kitchen renovation"></div>
+        <div class="slide"><img src="images/portfolio3.jpg" alt="Stylish exterior painting project"></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-links-container">
+        <a href="wallpaper.html" class="service-link">Wallpaper</a>
+        <a href="pvc.html" class="service-link">PVC Panels</a>
+        <a href="uv-sheets.html" class="service-link">UV Sheets</a>
+        <a href="gypsum.html" class="service-link">Gypsum Tiles</a>
+        <a href="blinds.html" class="service-link">Blinds</a>
+        <a href="vertical-garden.html" class="service-link">Vertical Garden</a>
+        <a href="floor-mats.html" class="service-link">Self-Adhesive Floor Mats</a>
+      </div>
+    </section>
+
+    <section id="reviews">
+        <h2>What Our Clients Say</h2>
+        </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <img src="images/dad-photo.jpg" alt="Mr. Krishna, Founder" class="dad-photo" />
+        <div class="about-text">
+          <p>Krishna Interior & Exterior Gallery has been serving in the field of home decor since years. Our expertise and trusted network help transform your spaces with elegance and function.</p>
+          <blockquote>"I’m Neeraj,owner of this gallery. Our goal is to create spaces that not only look beautiful but truly feel like home. Reach out anytime, we’re here to help!"<br />— Neeraj Tuteja</blockquote>
+          <p>Contact us at: <a href="tel:+919316324040">+91 93163 24040</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <h3>Book a Virtual Consultation</h3>
+      <form id="consultationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="contactInfo">Email or Phone Number:</label>
+        <input type="text" id="contactInfo" name="contactInfo" required />
+        <label for="message">Tell us briefly about your requirement:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage" style="display:none; color: green; margin-top: 10px;">Thank you! We'll get in touch soon.</p>
+    </section>
+  </main>
+
+  <a href="https://wa.me/919316324040" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <img src="images/whatsapp-icon.svg" alt="WhatsApp Icon" />
+  </a>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
